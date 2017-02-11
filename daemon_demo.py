@@ -13,7 +13,7 @@ if __name__ == '__main__':
         p1.start()
         p1.join()
     p2 = Process(name = 'worker2', target = worker2)
-    p2.daemon = False
+    p2.daemon = True
     p2.start()
     p2.join()
 
